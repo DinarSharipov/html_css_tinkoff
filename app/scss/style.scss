@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+$prjGrey: rgba(34, 62, 105, 0.1);
+$prjFontColor: #11223e;
+
+@import "header";
+@import "main";
