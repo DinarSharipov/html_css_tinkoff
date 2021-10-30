@@ -1,0 +1,144 @@
+.container {
+  padding: 40px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  // .header__warning
+
+  &__warning {
+    background-color: #f8e61c2c;
+
+    height: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin: 30px 0;
+  }
+
+  // .header__warning-status
+
+  &__warning-status {
+    margin-right: 25px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 4px 0;
+
+    // .header__warning-status--left
+
+    &--left {
+      background-color: #f8e71c;
+      padding: 4px 0 4px 6px;
+    }
+
+    // .header__warning-status--right
+
+    &--right {
+      background-color: #ffffff;
+      padding: 4px 6px 4px 0px;
+    }
+  }
+
+  // .header__warning-text
+
+  &__warning-text {
+    color: #11223e;
+    opacity: 0.5;
+  }
+}
+.nav {
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  button {
+    height: 40px;
+  }
+
+  // .nav__search
+
+  &__search {
+    height: 40px;
+    input {
+      padding-left: 16px;
+      outline: none;
+      border: 1px solid $prjGrey;
+      border-radius: 3px;
+      height: 100%;
+      width: 240px;
+    }
+  }
+
+  // .nav__btns
+
+  &__btns {
+    height: 100%;
+    button {
+      font-weight: bold;
+      border-radius: 5px;
+    }
+  }
+
+  // .nav__btns-download
+
+  &__btns-download {
+    width: 142px;
+    background-color: initial;
+    border: 1px solid $prjGrey;
+  }
+
+  // .nav__btns-addQuery
+
+  &__btns-addQuery {
+    width: 170px;
+    background-color: #fc3969;
+    border: none;
+    color: #fff;
+  }
+}
+.windowMode {
+  margin: 0 20px;
+  height: 100%;
+  display: flex;
+  flex-grow: 1;
+  display: flex;
+
+  // .windowMode__phone
+
+  &__phone {
+    border: 1px solid $prjGrey;
+    border-radius: 3px 0 0 3px;
+    background-color: initial;
+    width: 105px;
+    border-right: none;
+  }
+
+  // .windowMode__tablet
+
+  &__tablet {
+    border: 1px solid $prjGrey;
+    border-radius: 0 3px 3px 0;
+    background-color: initial;
+    width: 105px;
+  }
+}
+
+@media (max-width: 425px) {
+  .nav {
+    justify-content: center;
+    input {
+      width: 100vw;
+    }
+    button {
+      width: 50vw;
+    }
+  }
+
+  .windowMode {
+    flex-grow: initial;
+  }
+}

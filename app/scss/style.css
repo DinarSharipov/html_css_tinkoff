@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.container {
+  padding: 40px;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__warning {
+  background-color: #f8e61c2c;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+.header__warning-status {
+  margin-right: 25px;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 4px 0;
+}
+
+.header__warning-status--left {
+  background-color: #f8e71c;
+  padding: 4px 0 4px 6px;
+}
+
+.header__warning-status--right {
+  background-color: #ffffff;
+  padding: 4px 6px 4px 0px;
+}
+
+.header__warning-text {
+  color: #11223e;
+  opacity: 0.5;
+}
+
+.nav {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.nav button {
+  height: 40px;
+}
+
+.nav__search {
+  height: 40px;
+}
+
+.nav__search input {
+  padding-left: 16px;
+  outline: none;
+  border: 1px solid rgba(34, 62, 105, 0.1);
+  border-radius: 3px;
+  height: 100%;
+  width: 240px;
+}
+
+.nav__btns {
+  height: 100%;
+}
+
+.nav__btns button {
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.nav__btns-download {
+  width: 142px;
+  background-color: initial;
+  border: 1px solid rgba(34, 62, 105, 0.1);
+}
+
+.nav__btns-addQuery {
+  width: 170px;
+  background-color: #fc3969;
+  border: none;
+  color: #fff;
+}
+
+.windowMode {
+  margin: 0 20px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: flex;
+}
+
+.windowMode__phone {
+  border: 1px solid rgba(34, 62, 105, 0.1);
+  border-radius: 3px 0 0 3px;
+  background-color: initial;
+  width: 105px;
+  border-right: none;
+}
+
+.windowMode__tablet {
+  border: 1px solid rgba(34, 62, 105, 0.1);
+  border-radius: 0 3px 3px 0;
+  background-color: initial;
+  width: 105px;
+}
+
+@media (max-width: 425px) {
+  .nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .nav input {
+    width: 100vw;
+  }
+  .nav button {
+    width: 50vw;
+  }
+  .windowMode {
+    -webkit-box-flex: initial;
+        -ms-flex-positive: initial;
+            flex-grow: initial;
+  }
+}
+
+.table-wrapper {
+  max-width: calc(100vw - 80px);
+  overflow: auto;
+  border-right: 1px solid #9b9b9b;
+}
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+}
+
+tr {
+  border: 1px solid rgba(34, 62, 105, 0.1);
+  color: #11223e;
+}
+
+td {
+  width: 40px;
+  height: 50px;
+  border: 1px solid rgba(34, 62, 105, 0.1);
+  border-left: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+td:nth-child(1) {
+  text-align: left;
+  position: -webkit-sticky;
+  position: sticky;
+  background: #ffffff;
+  left: 0;
+  width: 285px;
+  outline: 1px solid rgba(34, 62, 105, 0.1);
+  border: none;
+}
+
+td:nth-child(2) {
+  text-align: center;
+  outline: 1px solid rgba(34, 62, 105, 0.1);
+  border: none;
+  position: -webkit-sticky;
+  position: sticky;
+  background: #ffffff;
+  left: 285px;
+  width: 90px;
+}
+
+.checkbox {
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+}
+
+.table__row--box {
+  text-align: center;
+}
+
+.table__row--box i {
+  margin: 0 7.5px;
+  color: grey;
+}
+
+.checkbox {
+  margin: 0 20px;
+}
+
+.btn-open {
+  position: absolute;
+  right: 10px;
+}
+
+.fa-star {
+  position: absolute;
+  right: 25px;
+}
+/*# sourceMappingURL=style.css.map */
