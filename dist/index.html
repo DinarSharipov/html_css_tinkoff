@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="nav">
+          <div class="nav__search">
+            <input type="text" placeholder="Поиск по запросу" />
+          </div>
+          <div class="windowMode">
+            <button class="windowMode__phone">iPhone/iPod</button>
+            <button class="windowMode__tablet">iPad</button>
+          </div>
+          <div class="nav__btns">
+            <button class="nav__btns-download">Скачать .CSV</button>
+            <button class="nav__btns-addQuery">Добавить запрос</button>
+          </div>
+        </nav>
+        <section class="header__warning">
+          <div class="header__warning-status">
+            <span class="header__warning-status--left">45% в&nbsp;</span>
+            <span class="header__warning-status--right">ТОП-3</span>
+          </div>
+          <span class="header__warning-text"
+            >Вы недополучаете 450 инсталлов в день</span
+          >
+        </section>
+      </header>
+      <div class="table__wrapper" id="tableWrapper">
+        <!-- <table class="table">
+          <thead class="table__head">
+            <tr class="table__head-row">
+              <th class="table__head-col first-col">
+                <input class="checkbox icon" type="checkbox" />
+                <i class="far fa-trash-alt icon"></i>
+                <i class="fas fa-redo-alt icon"></i>
+                <i class="fas fa-rocket icon"></i>
+              </th>
+              <th class="table__head-col second-col">Название столбца</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+              <th class="table__head-col">Дата</th>
+            </tr>
+          </thead>
+          <tbody class="table__body">
+            <tr class="table__body-row">
+              <td class="table__body-col first-col">
+                <input class="checkbox icon" type="checkbox" />
+                <span class="firs-col-text">Тинькофф банк отзывы</span>
+                <i style="color: gold" class="far fa-star"></i>
+                <i class="fas fa-chevron-right" id="openBonusList"></i>
+              </td>
+              <td class="table__body-col second-col">Значение 23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+            </tr>
+            <tr class="table__body-row">
+              <td class="table__body-col first-col">
+                <input class="checkbox icon" type="checkbox" />
+                <span class="firs-col-text">Тинькофф банк</span>
+                <i style="color: gold" class="far fa-star"></i>
+                <i class="fas fa-chevron-right" id="openBonusList"></i>
+              </td>
+              <td class="table__body-col second-col">Значение 23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+              <td class="table__body-col">23</td>
+            </tr>
+            <tr class="table__body-row opened-row">
+              <td class="table__body-col first-col opened-col__first">
+                <button>Посмотреть ТОП-10</button>
+              </td>
+              <td class="table__body-col second-col opened-col__second"></td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+              <td class="table__body-col opened-col">
+                <img src="./images/png/1.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+                <img src="./images/png/2.png" alt="" />
+              </td>
+            </tr>
+          </tbody>
+        </table> -->
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

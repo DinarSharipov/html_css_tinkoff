@@ -186,9 +186,9 @@ class Table {
       } else {
         row.insertAdjacentHTML(
           "beforeend",
-          ` <td class="table__body-col  ${
-            Math.round(Math.random() * 100) > 95 ? "index" : null
-          }">${Math.round(Math.random() * 1000)}</td>`
+          ` <td class="table__body-col">${Math.round(
+            Math.random() * 1000
+          )}</td>`
         );
       }
     }
