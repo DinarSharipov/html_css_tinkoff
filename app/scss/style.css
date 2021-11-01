@@ -102,6 +102,8 @@
 .nav__btns button {
   font-weight: bold;
   border-radius: 5px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
 }
 
 .nav__btns-download {
@@ -110,11 +112,31 @@
   border: 1px solid rgba(34, 62, 105, 0.1);
 }
 
+.nav__btns-download:hover {
+  background-color: rgba(34, 62, 105, 0.1);
+}
+
+.nav__btns-download:active {
+  background-color: #fff;
+}
+
 .nav__btns-addQuery {
   width: 170px;
   background-color: #fc3969;
   border: none;
   color: #fff;
+  -webkit-box-shadow: 0px 2px 4px #fc3969;
+          box-shadow: 0px 2px 4px #fc3969;
+}
+
+.nav__btns-addQuery:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.nav__btns-addQuery:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 .windowMode {
@@ -127,6 +149,19 @@
       -ms-flex-positive: 1;
           flex-grow: 1;
   display: flex;
+}
+
+.windowMode button {
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.windowMode button:hover {
+  background-color: rgba(34, 62, 105, 0.1);
+}
+
+.windowMode button:active {
+  background-color: initial;
 }
 
 .windowMode__phone {

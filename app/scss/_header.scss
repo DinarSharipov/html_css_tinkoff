@@ -80,6 +80,7 @@
     button {
       font-weight: bold;
       border-radius: 5px;
+      transition: 0.1s;
     }
   }
 
@@ -89,6 +90,13 @@
     width: 142px;
     background-color: initial;
     border: 1px solid $prjGrey;
+
+    &:hover {
+      background-color: $prjGrey;
+    }
+    &:active {
+      background-color: #fff;
+    }
   }
 
   // .nav__btns-addQuery
@@ -98,6 +106,13 @@
     background-color: #fc3969;
     border: none;
     color: #fff;
+    box-shadow: 0px 2px 4px #fc3969;
+    &:hover {
+      transform: scale(1.02);
+    }
+    &:active {
+      transform: scale(1);
+    }
   }
 }
 .windowMode {
@@ -106,6 +121,15 @@
   display: flex;
   flex-grow: 1;
   display: flex;
+  button {
+    transition: 0.1s;
+  }
+  button:hover {
+    background-color: $prjGrey;
+  }
+  button:active {
+    background-color: initial;
+  }
 
   // .windowMode__phone
 
