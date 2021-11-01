@@ -59,7 +59,7 @@ function styles() {
 
 function build() {
   return src(
-    ["app/css/style.min.css", "app/fonts/**/*", "app/js/main.js", "app/*.html"],
+    ["app/scss/style.css", "app/fonts/**/*", "app/js/main.js", "app/*.html"],
     { base: "app" }
   ).pipe(dest("dist"));
 }
